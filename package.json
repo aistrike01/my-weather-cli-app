@@ -1,0 +1,34 @@
+{
+    "name": "weather-cli-aistrike",
+    "version": "1.0.0",
+    "private": true,
+    "description": "my weather-cli for practice node.js",
+    "main": "weather.js",
+    "bin": {
+        "weather": "weather.js "
+    },
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlariCode/4-nodejs-demo-2.git"
+    },
+    "keywords": [
+        "cli",
+        "weather"
+    ],
+    "author": "aistrike",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/AlariCode/4-nodejs-demo-2/issues"
+    },
+    "homepage": "https://aistrike.vercel.app",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "chalk": "^5.0.1",
+        "dedent-js": "^1.0.1"
+    }
+}
