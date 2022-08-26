@@ -1,6 +1,6 @@
 {
     "name": "weather-cli-aistrike",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "my weather-cli for practice node.js",
     "main": "weather.js",
     "bin": {
