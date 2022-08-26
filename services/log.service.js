@@ -22,4 +22,23 @@ const printHelp = () => {
     );
 };
 
-export { printError, printSuccess, printHelp };
+const printWeather = (data) => {
+    const city = data.name;
+    const weather = data.weather[0].main;
+    const description = data.weather[0].description;
+    const temp = data.main.temp;
+    const feelTemp = data.main.feels_like;
+    const visibility = data.visibility;
+    console.log(
+        dedent(
+            `${chalk.blue(city)}
+        Weather: ${chalk.cyan(weather)} 
+        Temp: ${chalk.bgRed(temp)} Feels like: ${chalk.red(feelTemp)}
+        ${chalk.yellow(description)}
+        Visibility: ${chalk.bgWhite(visibility / 1000 + " km")}
+        `
+        )
+    );
+};
+
+export { printWeather, printError, printSuccess, printHelp };
