@@ -4,11 +4,11 @@
     "description": "my weather-cli for practice node.js",
     "main": "weather.js",
     "bin": {
-        "weather": "bin/weather.js "
+        "weather": "./weather.js"
     },
     "type": "module",
     "scripts": {
-        "start": "node index.js",
+        "start": "node weather.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
